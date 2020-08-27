@@ -27,12 +27,12 @@ delay=40000
 autotune=$(echo "--auto-tune 3")
 
 ### Pools. Defaults to ethminer rem these lines and remove comment from lines below if you want nanopool
-stratum1=$(echo "-P stratum+ssl://$etheaddress.$workername@us1.ethermine.org:5555")
-stratum2=$(echo "-P stratum+ssl://$etheaddress.$workername@us2.ethermine.org:5555")
+stratum1=$(echo "-P stratum+ssl://$ethaddress.$workername@us1.ethermine.org:5555")
+stratum2=$(echo "-P stratum+ssl://$ethaddress.$workername@us2.ethermine.org:5555")
 
 ### nanopool
-# stratum1=$(echo "-P stratum1+tcp://$etheaddress@eth-us-east1.nanopool.org:9999/$workername")
-# stratum2=$(echo "-P stratum1+tcp://$etheaddress@eth-us-west1.nanopool.org:9999/$workername")
+# stratum1=$(echo "-P stratum1+tcp://$ethaddress@eth-us-east1.nanopool.org:9999/$workername")
+# stratum2=$(echo "-P stratum1+tcp://$ethaddress@eth-us-west1.nanopool.org:9999/$workername")
 
 
 ###################### Generated code below no need to modify ###############################
