@@ -1,3 +1,4 @@
+@echo off
 rem ### What is your ETH Address?
 set ethaddress=0x48E31e6B7A2696dcb7733C974A4B498fAa3234F6
 
