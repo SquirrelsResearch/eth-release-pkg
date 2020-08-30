@@ -43,6 +43,7 @@ if [%fkvccint%] NEQ [] set fkvcccmd=--sqrl-fk-vccint %fkvccint%
 if [%jcvccint%] NEQ [] set jcvcccmd=--sqrl-jc-vccint %jcvccint%
 
 :loop
-	%miner% -v 2 --sqrl --sqrl-hosts %hosts% --sqrl-patience %patience% --sqin %sqin% --sqid %sqid% --sqrl-work-delay %delay% %fkvcccmd% %jcvcccmd% --HWMON 1 --cclk %cclk% %autotune% %stratum1% %stratum2%
-	timeout 5
+	%miner% -v 2 --sqrl --sqrl-hosts %hosts% --sqrl-patience %patience% --sqin %sqin% --sqid %sqid% --sqrl-work-delay %delay% %fkvcccmd% %jcvcccmd% --HWMON 1 --cclk %cclk% %autotune% -R %stratum1% %stratum2%
+	echo "Restarting the miner in 10 seconds..."
+	timeout 10
 goto loop
