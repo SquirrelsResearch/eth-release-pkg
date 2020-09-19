@@ -37,7 +37,7 @@ Windows:
 After running the startminer batch or script the miner should start building the DAG which takes about 7 minutes. Once complete the miner will start mining. 
 
 Changelog:
-20200918 Release 1.6
+20200919 Release 1.6
 	Ethminer 1.6.1
 		- Improved performance and bug fixes for FPGA communication
 		- Prevented bogus telemetry and errors if communication is lost with the FPGA
@@ -46,6 +46,7 @@ Changelog:
 		- Performance averages are more accurate.
 		- Autotune is improved in performance and adds more modes
 		- Fixed a bug where specifying an FK voltage lower than available would not set any voltage at all (now sets the lowest available voltage)
+		- DAG Generation speed is significantly improved
 	Bridge 2.0.2
 		- Prevented a communication failure on one FPGA from causing all others to fail
 		- Added multi-client support to enable dual mining and external board management utilities 
