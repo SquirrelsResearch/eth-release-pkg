@@ -6,7 +6,7 @@ vccint=0.85
 ### Forest Kitten 33 = fk33
 ### JCC2L-33 = jcc2l-33
 ### JCC2L-35 = jcc2l-35
-### JCC4p-35 = jcc2l-35
+### JCC4p-35 = jcc4p-35
 devicetype=fk33
 
 ### Uncomment and set the IPs for your ethernet connected JCC2L Device if needed
@@ -29,7 +29,7 @@ if [ "$rpi" == "arm64" ]; then bridge=sqrl_bridge_arm64; fi
 if [ "$devicetype" == "fk33" ]; then bridgeoptions=$(echo "-u -a -x -g -q -v $vccint -b $bit33"); fi
 if [ "$devicetype" == "jcc2l-33" ]; then bridgeoptions=$(echo "-c $jcips -x -g -q -v $vccint -b $bit33"); fi
 if [ "$devicetype" == "jcc2l-35" ]; then bridgeoptions=$(echo "-c $jcips -x -g -q -v $vccint -b $bit35"); fi
-if [ "$devicetype" == "jcc4p-35" ]; then bridgeoptions=$(echo "-u -a -x -g -q -v $vccint -b $bit35"); fi
+if [ "$devicetype" == "jcc4p-35" ]; then bridgeoptions=$(echo "-a -x -g -q -v $vccint -b $bit35"); fi
 
 ### Run Bridge
 ./$bridge $bridgeoptions
