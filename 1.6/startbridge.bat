@@ -20,7 +20,7 @@ set bridge=sqrl_bridge.exe
 REM ### Set bridgeoptions
 if [%devicetype%] EQU [fk33] set bridgeoptions=-u -a -x -g -q -v %vccint% -b %bit33%
 if [%devicetype%] EQU [jcc2l-33] set bridgeoptions=-c %jcips% -x -g -q -v %vccint% -b %bit33%
-if [%devicetype%] EQU [jcc23-35] set bridgeoptions=-c %jcips% -x -g -q -v %vccint% -b %bit35%
+if [%devicetype%] EQU [jcc2l-35] set bridgeoptions=-c %jcips% -x -g -q -v %vccint% -b %bit35%
 if [%devicetype%] EQU [jcc4p-35] set bridgeoptions=-u -a -x -g -q -v %vccint% -b %bit35%
 REM ### Run Bridge
 %bridge% %bridgeoptions%
