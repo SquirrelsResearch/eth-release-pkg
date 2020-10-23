@@ -2,8 +2,8 @@
 
 ### Set the voltage of your device
 vccint=0.85
-vccbram=0.84
-vcchbm=1.18
+vccbram=0.85
+vcchbm=1.22
 ### Set Device type:
 ### Forest Kitten 33 = fk33
 ### JCC2L-33 = jcc2l_33
