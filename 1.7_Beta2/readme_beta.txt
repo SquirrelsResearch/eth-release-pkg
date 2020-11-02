@@ -1,5 +1,7 @@
 ﻿This is a beta release. 1.6 Is still the official release. 
 
+Note: The Raspberry Pi executables are compiled for Ubuntu 20.10.
+
 Steps for mining:
 
 Linux:
